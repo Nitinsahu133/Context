@@ -1,25 +1,26 @@
 // Write your code here
 import ConfigurationContext from '../../context/ConfigurationContext'
+import './index.css'
 
 const Body = () => (
   <ConfigurationContext.Consumer>
     {value => {
       const {showContent, showLeftNavbar, showRightNavbar} = value
       return (
-        <div>
+        <div className="body-container">
           {showLeftNavbar && (
-            <div>
+            <nav className="navbar">
               <h1>Left Navbar Menu</h1>
-              <ul>
+              <ul className="left-nav-list">
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
                 <li>Item 4</li>
               </ul>
-            </div>
+            </nav>
           )}
           {showContent && (
-            <div>
+            <div className="content-container">
               <h1>Content</h1>
               <p>
                 Lorem ipsum This handy tool helps you create dummy text for all
@@ -29,11 +30,11 @@ const Body = () => (
             </div>
           )}
           {showRightNavbar && (
-            <nav>
+            <nav className="navbar">
               <h1>Right Navbar</h1>
               <div>
-                <div>Ad 1</div>
-                <div>Ad 2</div>
+                <div className="nav-2-ad-container">Ad 1</div>
+                <div className="nav-2-ad-container">Ad 2</div>
               </div>
             </nav>
           )}

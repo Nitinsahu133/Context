@@ -1,1 +1,7 @@
 /* Write your CSS here */
+.Footer {
+  text-align: center;
+  background-color: #e2e8f0;
+  font-family: Roboto;
+  padding: 10px;
+}

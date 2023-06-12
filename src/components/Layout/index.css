@@ -1,1 +1,7 @@
 /* Write your CSS here */
+.layout-container {
+  padding: 30px;
+  background-color: #475569;
+  color: #ffffff;
+  font-family: Roboto;
+}

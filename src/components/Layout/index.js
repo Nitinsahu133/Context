@@ -10,17 +10,6 @@ const Layout = () => (
         onToggleShowLeftNavbar,
         onToggleShowRightNavbar,
       } = value
-      const onCheckShowContent = () => {
-        onToggleShowContent()
-      }
-
-      const onCheckShowLeftNavbar = () => {
-        onToggleShowLeftNavbar()
-      }
-
-      const onCheckShowRightNavbar = () => {
-        onToggleShowRightNavbar()
-      }
 
       return (
         <div className="layout-container">
@@ -28,7 +17,7 @@ const Layout = () => (
           <div className="layout-checkbox-container">
             <input
               defaultChecked
-              onChange={onCheckShowContent}
+              onChange={onToggleShowContent}
               id="content"
               type="checkbox"
             />
@@ -39,7 +28,7 @@ const Layout = () => (
           <div className="layout-checkbox-container">
             <input
               defaultChecked
-              onChange={onCheckShowLeftNavbar}
+              onChange={onToggleShowLeftNavbar}
               id="leftNavbar"
               type="checkbox"
             />
@@ -50,7 +39,7 @@ const Layout = () => (
           <div className="layout-checkbox-container">
             <input
               defaultChecked
-              onChange={onCheckShowRightNavbar}
+              onChange={onToggleShowRightNavbar}
               id="rightNavbar"
               type="checkbox"
             />
